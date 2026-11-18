@@ -1,0 +1,55 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "vectorisation": {
+    "n": 120000,
+    "loop_median_ms": 16.313543000023856,
+    "numpy_median_ms": 0.09552400001666683,
+    "speedup": 170.77952134727923
+  },
+  "buffer_experiment": [
+    {
+      "buffer_size": 40,
+      "prequential_accuracy": 0.7720588235294118,
+      "holdout_accuracy": 0.9083333333333333,
+      "median_chunk_update_ms": 25.440310500016494,
+      "median_retrain_event_ms": 25.440310500016494,
+      "mean_retrain_event_ms": 25.709944777797016,
+      "total_retrains": 18,
+      "remaining_buffer": 0
+    },
+    {
+      "buffer_size": 80,
+      "prequential_accuracy": 0.8421875,
+      "holdout_accuracy": 0.85,
+      "median_chunk_update_ms": 23.5372740000912,
+      "median_retrain_event_ms": 56.1150659998475,
+      "mean_retrain_event_ms": 58.364349222200765,
+      "total_retrains": 9,
+      "remaining_buffer": 0
+    },
+    {
+      "buffer_size": 160,
+      "prequential_accuracy": 0.8678571428571429,
+      "holdout_accuracy": 0.9083333333333333,
+      "median_chunk_update_ms": 0.011236499972255842,
+      "median_retrain_event_ms": 147.83135199991193,
+      "mean_retrain_event_ms": 146.58566549996976,
+      "total_retrains": 4,
+      "remaining_buffer": 80
+    },
+    {
+      "buffer_size": 240,
+      "prequential_accuracy": 0.84375,
+      "holdout_accuracy": 0.9,
+      "median_chunk_update_ms": 0.003891500000463566,
+      "median_retrain_event_ms": 250.86944899999253,
+      "mean_retrain_event_ms": 237.84234300001117,
+      "total_retrains": 3,
+      "remaining_buffer": 0
+    }
+  ]
+}
